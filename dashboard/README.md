@@ -20,4 +20,4 @@ Use a README.md to describe your approach and what exactly you are showing.
 Since this is an open ended project we will be giving you more time, until tomorrow morning 10am (June 22 10am PST)  to make your submissions.
 We will only look at GitHub submissions before the deadline.
 
-Please email your link to your forked GitHub repo to markc@h2o.ai
+Please email the link to your forked GitHub repo to markc@h2o.ai
