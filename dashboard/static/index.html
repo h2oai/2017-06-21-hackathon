@@ -1,0 +1,79 @@
+<html lang="en">
+ 
+<head>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/justified-nav/justified-nav.css" rel="stylesheet"> 
+    <link href="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.css" rel="stylesheet">
+</head>
+ 
+
+<style>
+#chart svg {
+  height: 800px;
+  width: 1500px;
+}
+</style>
+
+
+<body>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
+
+    <script src="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.min.js" charset="utf-8"></script>
+    <script> 
+	    generateChart();
+        function generateChart() {
+		    var myData = [];
+            var chart;
+		    d3.json("http://127.0.0.1:5000/GetData", function(error,data) {
+		   
+                    for (var k in data) {
+                        myData.push({"key":data[k].key, "values":data[k].values});
+                    }
+                    nv.addGraph(function() {
+                      chart = nv.models.lineChart()
+                                    .margin({left: 100})  //Adjust chart margins to give the x-axis some breathing room.
+                                    .useInteractiveGuideline(true)  //We want nice looking tooltips and a guideline!
+                      //              .transitionDuration(350)  //how fast do you want the lines to transition?
+                                    .showLegend(true)       //Show the legend, allowing users to turn on/off line series.
+                                    .showYAxis(true)        //Show the y-axis
+                                    .showXAxis(true)        //Show the x-axis
+                				    .x(function(d) { return d.end_time })
+				                    .y(function(d) { return d.zscore })
+
+                      ;
+                    
+                      chart.xAxis     //Chart x-axis settings
+                          .axisLabel('Timestamp')
+                          .tickFormat(d3.format(',r'));
+                    
+                      chart.yAxis     //Chart y-axis settings
+                          .axisLabel('ZScore')
+                          .tickFormat(d3.format('.02f'));
+                    
+                    
+                      d3.select('#chart svg')    //Select the <svg> element you want to render the chart in.   
+                          .datum(myData)         //Populate the <svg> element with chart data...
+                          .call(chart);          //Finally, render the chart!
+                    
+                      //Update the chart when window resizes.
+                      nv.utils.windowResize(function() { chart.update() });
+                      return chart;
+                    });
+		    });
+
+
+
+ 	    }
+
+    
+    </script>
+ 
+    <div id="chart">
+       <svg></svg>
+    </div>
+
+ 
+</body>
+ 
+</html>
