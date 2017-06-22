@@ -1,5 +1,3 @@
-# 06/21 Hiring Hackathon
-
 ## Assignment: Develop "GitHub PR Query" tool
 
 ### GitHub PR Query tool
