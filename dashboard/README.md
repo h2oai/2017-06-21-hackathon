@@ -1,4 +1,4 @@
-## Dashboard Test
+## Assignment: Dashboard
 Build a dashboard with some interesting insight that you have discovered in our unit test data. This is an open ended test, come up with something original and show us your best work.
 
 ![](img/dashboard_sample.png)
