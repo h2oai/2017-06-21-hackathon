@@ -13,6 +13,7 @@ See attached [dashboard/README.md](dashboard/README.md) for details.
   - There is 2hours limit for [github-query] and 14hours for [dashboard] assignment.
   - You can use any tool, library you are comfortable with.
   - All Wifi networks marked by `GUEST` are available for use (e.g., `H2O_5.0_GUEST_4`)
+  - Link of this repository is [https://github.com/h2oai/2017-06-21-hackathon](https://github.com/h2oai/2017-06-21-hackathon)
   
 ## Submission of solution
 Send a location of your solution GitHub repository to `venkatesh@h2o.ai`
