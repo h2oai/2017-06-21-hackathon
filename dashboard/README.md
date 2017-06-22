@@ -20,6 +20,4 @@ The main objective is to build an end to end data product that can be displayed 
 Use a README.md to describe your approach and what exactly you are showing.
 
 Since this is an open ended project we will be giving you more time, until tomorrow morning 9am (June 22 9am PST)  to make your submissions.
-We will only look at GitHub submissions before the deadline.
-
-Please email the link to your forked GitHub repo to venkatesh@h2o.ai.
+We will only look at GitHub submissions before the deadline. Please email the link to your forked GitHub repo to venkatesh@h2o.ai.
