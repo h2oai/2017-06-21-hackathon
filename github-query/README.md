@@ -23,7 +23,13 @@ Furthermore, the utility should print summary of authors:
    - You can leverage any libraries: for example [PyGitHub](https://github.com/PyGithub/PyGithub) to communicate with GitHub API, or [dateparser](https://pypi.python.org/pypi/dateparser) to parse date
  - Create and submit code to your GitHub repository
  - Time limit is 2hours
- 
+
+## Submission of solution
+Send a location of your solution GitHub repository to `venkatesh@h2o.ai`
+
+## Evaluation
+We will do evaluation of submitted solutions on Thursday and authors of successful solutions will be contacted.
+
 ### Hints
   - If you hit GitHub rate limit, you need to create an application id in GitHub settings under your account.
   
