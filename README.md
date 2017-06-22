@@ -10,7 +10,7 @@ See attached [dashboard/README.md](dashboard/README.md) for details.
 
 ## Technical details
   - For your solution, please, create a public GitHub repository under your GitHub account.
-  - There is 2hours limit for solution.
+  - There is 2hours limit for [github-query] and 14hours for [dashboard] assignement.
   - You can use any tool, library you are comfortable with.
   - All Wifi networks marked by `GUEST` are available for use (e.g., `H2O_5.0_GUEST_4`)
   
