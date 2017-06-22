@@ -5,7 +5,7 @@
 Today, we are primarily looking for Infrastructure, Tools, and Automation (ITA) person. 
 For this position, we prepared [github-query](github-query) assignment. See attached [github-query/README.md](github-query/README.md) for details.
 
-If you do not feel to fit into ITA position, please show us, how great you are on the second assignment [dashboard].
+If you do not feel to fit into ITA position, please show us, how great you are on the second assignment [dashboard](dashboard).
 See attached [dashboard/README.md](dashboard/README.md) for details.
 
 ## Technical details
